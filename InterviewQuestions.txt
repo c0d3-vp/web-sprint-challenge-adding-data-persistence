@@ -1,7 +1,14 @@
 1. Explain the difference between Relational Databases and SQL.
-
+    SQL databases are known as relational databases, and have a table-based data structure, with a strict, predefined schema required. NoSQL databases, or non-relational databases, can be document based, graph databases, key-value pairs, or wide-column stores.
 2. Why do tables need a primary key?
+    Because it ensures row-level accessibility
 
 3. What is the name given to a table column that references the primary key on another table.
-
+    It is called a "Foreign Key".  A Foreing Key is one table that refers to the PRIMARY KEY in another table. The table containing the foreign key is called the child table, and the table containing the candidate key is called the referenced or parent table.
 4. What do we need in order to have a many to many relationship between two tables.
+    To create a many-to-many relationship between the tables, we need to create a join table between. The primary key of the join table is the combination of the primary keys of the tables that we would like to join in a many-to-many relationship.
+    For example:
+    Table 1: ORDERS
+    Table 2: PRODUCTS
+
+    ORDERS_PRODUCTS
